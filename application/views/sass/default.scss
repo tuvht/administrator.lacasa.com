@@ -1,0 +1,47 @@
+button,.btn{
+  text-shadow: none;
+  box-shadow: none;
+}
+
+form{
+  legend{
+    text-transform: uppercase;
+  }
+}
+.btngroup-suporder{
+  .btn{
+    height: 40px;
+    line-height: 40px;
+  }
+}
+#accordion > tr > td > a.btn-sm.btn{
+  padding: 0 15px;
+    display: inline-block;
+    width: auto;
+}
+.table-striped{
+  thead{
+    color: #fff;
+    background-color: #df4f71;
+    tr{
+      th{
+        border-bottom: 0;
+        font-weight: 700;
+      }
+    }
+    a{
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+}
+@mixin panel-heading-blue-light(){
+    background: #659be0;
+    color: #fff;
+}
+.panel.panel-custom{
+  .panel-heading{
+      @include panel-heading-blue-light();
+      font-weight: 700;
+  }
+}

@@ -1,0 +1,48 @@
+@media(max-width: 767px){
+	.header-first .logo{
+		margin-bottom: 30px;
+		height: auto;
+	}
+	.logobar .modulelist{
+		float: left;
+	}
+	.modulelist .module{
+		width: auto;
+	}
+	.navbar-toggle .icon-bar{
+		background: #000;
+	}
+	ul.topmenu{
+		display: block;
+		width: 100%;
+		border: 0px none;
+		margin-top: 10px;
+		left: 0;
+		top: 0 !important;
+		li{
+			&:hover{
+				background: transparent;
+				color: #252525;
+			}
+			a{
+				&:hover{
+					background: transparent;
+				}
+			}
+			&.dropdown{
+				&:hover{
+					.dropdown-menu{
+						display: none !important;
+					}
+				}
+			}
+		}
+
+	}
+	.menubox .nav.menu .dropdown > a::after{
+		content: ' ';
+	}
+	.navbar-toggle{
+		margin-right: 0;
+	}
+}

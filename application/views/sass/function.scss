@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+$white: #fff;
+$red: red;
+$black: #000;
+$text-color: #666;
+$gray: #ccc;
+$graydarker: #777;
+$border-color: #ccc;
+$blue-oleo: #94A0B2;
+$red: #ce6060;
+$red_button1: #df4f71;
+$text-color: #222;
+$gray: #ccc;
+$graydarker: #777;
+$fontbase: 14px;
+$green: #449a44;
+$green-light: #f1fff1;
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+
+
+
+$default-font-family: 'Century Gothic', sans-serif;
+
+
+
+@mixin setfont($fonts){
+
+	font-family: $fonts;
+}
+
+
+
+@mixin background-cover(){
+	-webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+@mixin primary_submit(){
+	background: $red_button1;
+	border-radius: 0;
+	border:0;
+	 height: 45px;
+	 height: 45px;
+    padding: 0 12px;
+    line-height: 45px;
+    &:hover,&:focus,&:actve{
+    	background: darken($red_button1,20%);
+    }
+}
+
+@mixin transform($value){
+	transform: translateX($value);
+	-o-transform: translateX($value);
+	-moz-transform: translateX($value);
+	-webkit-transform: translateX($value);
+}
+@mixin fontawesome(){
+	display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@mixin secondary_submit(){
+	color: #E9EDEF;
+	 height: 44px;
+    background-color: #4B5F71;
+    border-color: #364B5F;
+    border:0;
+    padding: 0 12px;
+    line-height: 44px;
+    &:hover,&:focus,&:active{
+    	color: #fff;
+    	background: darken(#4B5F71,20%);
+    }
+}
+
+@mixin third_submit(){
+	color: #fff;
+	 height: 44px;
+    background-color: #18C9D2;
+    border-color: #18C9D2;
+   	border:0;
+    padding: 0 12px;
+    line-height: 44px;
+    &:hover,&:focus,&:active{
+    	color: #fff;
+    	background: darken(#18C9D2,20%);
+    }
+}
+
+@mixin input_style1(){
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    
+    border: 2px solid #e5e5e5;
+    border-radius: 0;
+    background: transparent;
+    &:focus{
+    	border-color:  $green;
+    }
+}
+
+
+
+@mixin flexdisplay(){
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	//flex-wrap: wrap;
+	//-webkit-flex-wrap: wrap; /* Safari 6.1+ */
+}
+
+
+@mixin box-shadow(){
+	box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+	-webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+	-moz-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+}

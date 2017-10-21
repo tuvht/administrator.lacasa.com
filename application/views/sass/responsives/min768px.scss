@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+	ul.mainmenu{
+		li.dropdown,
+		a.dropdown-toggle{
+			&:hover{
+				>ul.dropdown-menu{
+					display: block;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 767px) {
+	.row.hidden-lg{
+		margin-top: 10px;
+	}
+	.col-sm-3.logo.text-left{
+		margin-top: 5px;
+	}
+	 .sidebar1{
+  	min-height: auto;
+  }
+}
